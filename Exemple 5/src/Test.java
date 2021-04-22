@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class Test {
 
 	public static void main(String[] args) {
+		
+		while (true) {
 		Scanner reader = new Scanner (System.in);
 		System.out.println("Please, tell us your name:");
 		String userName = reader.nextLine();
@@ -19,7 +21,7 @@ public class Test {
 		double userRate = reader.nextDouble();
 		
 		
-		System.out.println("User:");
+		System.out.println("User:\n");
 		System.out.println("!!!!!!!!!!!!!!!!!!!!!!!\n");
 		System.out.println("User Name: " + userName);
 		System.out.println("User Type: " + userType);
@@ -27,18 +29,28 @@ public class Test {
 		System.out.println("Rate:" + userRate);
 	
 		if (userType.equals("Vip")) {
-			System.out.println("You've paid " + userBuy);
+			System.out.println("\nTicket:");
+			System.out.println(userName + ", you're a Vip user.");
+			System.out.println("You've paid " + userBuy + "euros");
 			System.out.println("You have a 25% discount");
 			
 			int discount = userBuy * 25 / 100; 
 			System.out.println("Your discount is " + discount);
 			
 			int price = userBuy - discount;
-			System.out.println("the final price is " + price);
+			System.out.println("The final price is " + price + "euros");
 		
-		} 
+		} else {
+			
+		System.out.println("\nTicket");
+		System.out.println(userName + ", you're not a Vip user");
+		System.out.println("You've paid " + userBuy);
+		System.out.println("Your discount is 0%");
+		
+		}
 		
 		}
 
 	}
+}
 	
