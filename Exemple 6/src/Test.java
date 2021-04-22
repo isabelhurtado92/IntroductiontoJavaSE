@@ -34,9 +34,9 @@ public class Test {
 			System.out.println("You have a 25% discount");
 			
 			int discountvip = userBuy * 25 / 100; 
-			int amounttopayvip= userBuy - discountvip; 
+			int pricevip= userBuy - discountvip; 
 			System.out.println("Your discount is " + discountvip);
-			System.out.println("The final price is " + amounttopayvip);
+			System.out.println("The final price is " + pricevip);
 			
 			
 			
@@ -48,9 +48,9 @@ public class Test {
 			System.out.println("You have a 15% discount");
 			
 			int discountreg = userBuy * 15 / 100;
-			int amounttopayreg= userBuy - discountreg; 
+			int pricereg= userBuy - discountreg; 
 			System.out.println("Your discount is " + discountreg);
-			System.out.println("The final price is: " + amounttopayreg);
+			System.out.println("The final price is: " + pricereg);
 			
 			
 			
@@ -60,9 +60,9 @@ public class Test {
 		System.out.println("You have a 0% discount");
 		
 		int discountnew = userBuy * 0 / 100;
-		int amounttopaynew= userBuy - discountnew;
+		int pricenew= userBuy - discountnew;
 		System.out.println("Your discount is " + discountnew);
-		System.out.println("The final price is: " + amounttopaynew); 
+		System.out.println("The final price is: " + pricenew); 
 		
 		}
 	
