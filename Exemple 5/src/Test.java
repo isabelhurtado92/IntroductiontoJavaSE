@@ -15,7 +15,7 @@ public class Test {
 		int userBuy = reader.nextInt();
 		
 		
-		System.out.println("How would you rate our service?");
+		System.out.println("From 0 to 10, how would you rate our service?");
 		double userRate = reader.nextDouble();
 		
 		
@@ -26,10 +26,19 @@ public class Test {
 		System.out.println("Amount bought:" + userBuy);
 		System.out.println("Rate:" + userRate);
 	
+		if (userType.equals("Vip")) {
+			System.out.println("You've paid " + userBuy);
+			System.out.println("You have a 25% discount");
+			
+			int discount = userBuy * 25 / 100; 
+			System.out.println("Your discount is " + discount);
+			
+			int price = userBuy - discount;
+			System.out.println("the final price is " + price);
 		
+		} 
+		
+		}
 
 	}
-		
-		
-		
-	}
+	
