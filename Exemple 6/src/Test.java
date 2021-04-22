@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class Test {
 
 	public static void main(String[] args) {
+		
+		while (true) {
 		Scanner reader = new Scanner (System.in);
 		System.out.println("Please, tell us your name:");
 		String userName = reader.nextLine();
@@ -29,7 +31,7 @@ public class Test {
 		
 	
 		if (userType.equals("Vip")) {
-			System.out.println("Ticket:");
+			System.out.println("\nTicket:");
 			System.out.println("You've paid " + userBuy);
 			System.out.println("You have a 25% discount");
 			
@@ -66,8 +68,10 @@ public class Test {
 		
 		}
 	
-
+		else {
+			System.out.println("Oops, we couldn't process your petition. Please, remember to write Vip/Regular/New with capital letters");
+		}
 	}
-	
+	}
 }
 	
