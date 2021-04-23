@@ -5,6 +5,11 @@ public class Test {
 
 	public static void main(String[] args) {
 		
+		int discount= 0 ;
+		int totalDiscount= 0;
+		int price = 0;
+		
+		
 		while (true) {
 		Scanner reader = new Scanner (System.in);
 		System.out.println("Please, tell us your name:");
@@ -21,9 +26,6 @@ public class Test {
 		double userRate = reader.nextDouble();
 		
 		
-		int discount= 0 ;
-		int price = 0;
-		
 		System.out.println("User:");
 		System.out.println("!!!!!!!!!!!!!!!!!!!!!!!\n");
 		System.out.println("User Name: " + userName);
@@ -34,47 +36,41 @@ public class Test {
 		
 	
 		if (userType.equals("Vip")) {
-			System.out.println("\nTicket:");
-			System.out.println("You've paid " + userBuy);
-			System.out.println("You have a 25% discount");
 			
-			discount = userBuy * 25 / 100; 
-			price = userBuy - discount; 
-			System.out.println("Your discount is " + discount);
-			System.out.println("The final price is " + price);
+			discount = 25; 
+			totalDiscount = userBuy * 25 / 100;
+			price = userBuy - totalDiscount;
 			
 			
 			
 		
 		} else if (userType.equals("Regular")) {
-			System.out.println("Ticket:");
-			System.out.println("You've paid " + userBuy);
-			System.out.println(userName + ", you're a Regular user");
-			System.out.println("You have a 15% discount");
-			
-			discount = userBuy * 15 / 100;
-			price = userBuy - discount; 
-			System.out.println("Your discount is " + discount);
-			System.out.println("The final price is: " + price);
-			
+						
+			discount = 15;
+			totalDiscount = userBuy * 15 / 100;
+			price = userBuy - totalDiscount; 
 			
 			
 			
 		} else if (userType.equals("New")) {
-		System.out.println(userName + ", you're a New user");
-		System.out.println("You have a 0% discount");
 		
-		discount = userBuy * 0 / 100;
-		price = userBuy - discount;
-		System.out.println("Your discount is " + discount);
-		System.out.println("The final price is: " + price); 
+		discount = 0 ;
+		totalDiscount = userBuy * 0 / 100;
+		price = userBuy - totalDiscount;
 		
-		}
-	
-		else {
+		} else {
 			System.out.println("Oops, we couldn't process your petition. Please, remember to write Vip/Regular/New with capital letters");
 		}
-	}
+		
+		System.out.println("\nYour ticket:");
+		System.out.println("!!!!!!!!!!!!!!!!!!!!!\n");
+		System.out.println("Your discount is " + discount);
+		System.out.println("That is, applied to your purchase " + totalDiscount);
+		System.out.println("The final price is " + price);
+		
+		
+		
+		}
 	}
 }
 	
