@@ -36,35 +36,24 @@ public static void purchaseProcess() {
 	
 	
 
-	if (userType.equals("Vip")) {
+	if ( (userType.equals("Vip")) || (userType.equals("Regular")) || (userType.equals("New"))) {
 		
-		discount = 25; 
-		totalDiscount = userBuy * 25 / 100;
-		price = userBuy - totalDiscount;
+		
+		if (userType.equals("Vip")) discount = 25;
+		if (userType.equals("Regular")) discount = 15;
+		if (userType.equals("New")) discount = 0;
+		
+		totalDiscount = userBuy * discount / 100;		
+		price = userBuy - totalDiscount;		
 		printTicket(userBuy, discount, totalDiscount, price);
 		
-	
-	} else if (userType.equals("Regular")) {
-					
-		discount = 15;
-		totalDiscount = userBuy * 15 / 100;
-		price = userBuy - totalDiscount; 
-		printTicket(userBuy, discount, totalDiscount, price);
-		
-	} else if (userType.equals("New")) {
-	
-		discount = 0 ;
-		totalDiscount = userBuy * 0 / 100;
-		price = userBuy - totalDiscount;
-		printTicket(userBuy, discount, totalDiscount, price);
-	
 		
 	} else {
 		System.out.println("Oops, we couldn't process your petition. Please, remember to write Vip/Regular/New with capital letters");
 	}
 	}
 	}
-	
+
 	
 public static void printTicket(int userBuy, int discount, int totalDiscount, int price) {
 	System.out.println("\nYour ticket:");
