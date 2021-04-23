@@ -70,7 +70,7 @@ public static void printTicket(int userBuy, int discount, int totalDiscount, int
 	System.out.println("Your discount is " + discount);
 	System.out.println("That is, applied to your purchase " + totalDiscount);
 	System.out.println("The final price is " + price);
-	System.out.println("The final price with taxes is" + addTax(price));
+	System.out.println("The final price with taxes is " + addTax(price));
 	}
 
 public static double addTax(int price) {
