@@ -11,8 +11,10 @@ public static void purchaseProcess() {
 	
 	while (true) {
 	Scanner reader = new Scanner (System.in);
-	System.out.println("Please, tell us your name:");
+	System.out.println("Please, tell us your name: (\"quit to exit\")");
 	String userName = reader.nextLine();
+	
+	if (userName.equals("quit")) break;
 	
 	System.out.println("Now please, tell us your type of user:");
 	String userType = reader.nextLine();
@@ -24,7 +26,7 @@ public static void purchaseProcess() {
 	System.out.println("From 0 to 10, how would you rate our service?");
 	double userRate = reader.nextDouble();
 	
-	
+
 	System.out.println("User:");
 	System.out.println("!!!!!!!!!!!!!!!!!!!!!!!\n");
 	System.out.println("User Name: " + userName);
