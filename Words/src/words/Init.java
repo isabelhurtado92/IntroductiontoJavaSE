@@ -17,6 +17,7 @@ public class Init {
 		Operations.printStringH(word);
 		Operations.printStringV(word);
 		Operations.printStringDiagonal(word);
+		Operations.printStringBackwards(word);
 		
 		
 		

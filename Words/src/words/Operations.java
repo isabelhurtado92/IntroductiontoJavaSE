@@ -68,7 +68,7 @@ public class Operations {
 		while (i < sizeWordtoPrint ) {
 			int j= 0;
 			while (j < i) {
-			print("*");print("*");
+			print("*");
 			j++;
 			}
 			print(wordtoPrint.charAt(i));
@@ -77,6 +77,22 @@ public class Operations {
 			i++;
 		}
 		
+			
 	}
+	
+	
+	public static void printStringBackwards(String wordtoPrint) {
 
+		int i = 0;
+		int sizeWordtoPrint = wordtoPrint.length();
+		
+		while (i > sizeWordtoPrint ) {
+			print(wordtoPrint.charAt(i));
+			linebreak();
+			
+			i++;
+		}
+
+}
+	
 }
