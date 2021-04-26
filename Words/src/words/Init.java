@@ -16,7 +16,7 @@ public class Init {
 		Operations.printString(word);
 		Operations.printStringH(word);
 		Operations.printStringV(word);
-		//Operations.printStringHG(word);
+		Operations.printStringDiagonal(word);
 		
 		
 		
