@@ -25,7 +25,7 @@ public class Operations {
 		linebreak();
 		int sizeWordtoPrint = wordtoPrint.length();
 		while (i < sizeWordtoPrint) {
-			print("loop number: " + (i + 1) + " - ");
+			print("Loop number: " + (i + 1) + " - ");
 			print("letter: " + wordtoPrint.charAt(i));
 			linebreak();
 
@@ -83,14 +83,16 @@ public class Operations {
 	
 	public static void printStringBackwards(String wordtoPrint) {
 
-		int i = 0;
-		int sizeWordtoPrint = wordtoPrint.length();
+		int i = wordtoPrint.length() -1;
 		
-		while (i > sizeWordtoPrint ) {
+		while (i > -1 ) {
 			print(wordtoPrint.charAt(i));
-			linebreak();
+			print("**");
 			
-			i++;
+			
+			i--;
+			//que equival a i-1
+			
 		}
 
 }

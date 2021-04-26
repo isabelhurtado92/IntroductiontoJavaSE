@@ -18,8 +18,7 @@ public class Init {
 		Operations.printStringV(word);
 		Operations.printStringDiagonal(word);
 		Operations.printStringBackwards(word);
-		
-		
+				
 		
 		System.out.println("Chau");
 		
