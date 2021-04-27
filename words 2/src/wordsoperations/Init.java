@@ -8,7 +8,7 @@ package wordsoperations;
 
 			// scope #2
 			Scanner reader = new Scanner(System.in);
-			System.out.println("Write some string ...");
+			System.out.println("Write any string ...");
 			String word = reader.nextLine();
 
 			//Operations.operationsString(word);

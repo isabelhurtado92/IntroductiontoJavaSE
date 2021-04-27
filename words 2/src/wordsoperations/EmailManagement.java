@@ -6,8 +6,10 @@ public class EmailManagement {
 	
 public static void createAccount(String word) {
 
-		
-		//testRandom();
+	createUser(word);
+	//user
+	//mail
+	//password
 
 	}
 
@@ -36,8 +38,10 @@ public static void createAccount(String word) {
 	
 	public static String createUser (String word) {
 		
-		System.out.println("Tell me your name ...");
-		String word = reader.nextLine();
+		//agafa'm word i talla-me'l, només volem el nom de la persona
+		
+		print(word);
+		print(word.charAt(6));
 
 		return word;}
 	
@@ -77,5 +81,12 @@ public static void createAccount(String word) {
 
 	}
 	
-
+	public static void print (String word) {
+			System.out.println(word);
+	}
+	
+	
+	public static void print (char word) {
+		System.out.println(word);
+}
 }
