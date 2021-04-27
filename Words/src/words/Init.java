@@ -7,7 +7,7 @@ public class Init {
 	public static void main(String[] args) {
 		
 		Scanner reader = new Scanner (System.in);
-		System.out.println("Write some string...");
+		System.out.println("Write any string...");
 		String word = reader.nextLine();
 		
 		
