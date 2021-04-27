@@ -35,7 +35,10 @@ public static void createAccount(String word) {
 	}
 	
 	public static String createUser (String word) {
-		// to-do
+		
+		System.out.println("Tell me your name ...");
+		String word = reader.nextLine();
+
 		return word;}
 	
 	public static String createEmail (String word) {

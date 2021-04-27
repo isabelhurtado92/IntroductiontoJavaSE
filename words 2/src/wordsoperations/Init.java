@@ -13,7 +13,7 @@ package wordsoperations;
 
 			//Operations.operationsString(word);
 			//Editing.subEditing (word);
-			EmailManagment.createAccount(word);
+			EmailManagement.createAccount(word);
 			
 			System.out.println("\nBye bye my friend...");
 
