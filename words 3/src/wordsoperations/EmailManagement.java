@@ -13,7 +13,7 @@ public class EmailManagement {
 	public static void createAccount(String word) {
 
 		String user = createUser(word);
-		// String email = createEmail(word);
+		String email = createEmail(word);
 		// String password = createPassword(word);
 
 	}
@@ -31,35 +31,36 @@ public class EmailManagement {
 		
 		int index = word.indexOf(" ");
 		String username = (word.substring( 0, (index)));
-		print("Username is: " + username);
+		print(" Username is: " + username);
 
 		return word;
+		
+		
+		//afegir un linebreak
 
 	}
 
-	public static String createEmail(String word, int index) {
+	public static String createEmail (String word) {
 	
-		
+		int index = word.indexOf(" ");
 		char firstchar = word.charAt(0);
 		print(firstchar);
 		
-		String surname = (word.substring((index), word.length()));
+		String surname = (word.substring((index), word.length())); //arreglar perquè m'agafa el cognom
 		print(surname);
 		
 		
-		
-		String domain = @java.com;
-		
+		//String domain = @java.com;
 		//string email = firstchar + surname + domain
 		//print(" Email is: ");
 		
 		return word;
 	}
 
-	public static String createPassword() {
+	public static void createPassword() {
 		// to-do
-		String password = "";
-		return password;
+		//String password = "";
+		//return password;
 	}
 
 	public static void printUserAccount() {
