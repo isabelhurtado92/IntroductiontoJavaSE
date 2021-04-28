@@ -1,15 +1,15 @@
 package wordsoperations;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class EmailManagement {
 	
 public static void createAccount(String word) {
 
-	createUser(word);
-	//user
-	//mail
-	//password
+	//String user = createUser(word);
+	//String email = createEmail(word);
+	//String password = createPassword(word);
 
 	}
 
@@ -40,10 +40,16 @@ public static void createAccount(String word) {
 		
 		//agafa'm word i talla-me'l, només volem el nom de la persona
 		
-		print(word);
-		print(word.charAt(6));
+		//Operations.print(word);
+		//print(word.charAt(8));
+		
+		
+		//String user = 
+		//print("Your user is" + user )
 
-		return word;}
+		return word;
+		
+	}
 	
 	public static String createEmail (String word) {
 		// to-do
@@ -81,12 +87,6 @@ public static void createAccount(String word) {
 
 	}
 	
-	public static void print (String word) {
-			System.out.println(word);
-	}
-	
-	
-	public static void print (char word) {
-		System.out.println(word);
+
 }
-}
+
