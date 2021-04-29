@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class Init {
 
 	public static void main(String[] args) {
-//Name Request		
+
+		//Name Request		
 		
 	Scanner reader = new Scanner (System.in);
 	
@@ -17,8 +18,8 @@ public class Init {
 	System.out.println("Thanks " + nameandsurname);
 			
 	
-	
-//Llamadas a clases y sus metodos		
+
+	//Llamadas a clases y sus metodos		
 		
 		AccountManagement.createAccount (nameandsurname);
 		//AccountManagement.deleteAccount;
