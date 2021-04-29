@@ -2,11 +2,11 @@
 public class AccountManagement {
 	
 	
-	public static void createAccount() {
+	public static void createAccount(String nameandsurname) {
 		
 		
-		//AccountCreation.createUser;
-		//AccountCreation.createPassword;
+		AccountCreation.createUser (nameandsurname);
+		AccountCreation.createPassword();
 		
 		
 
