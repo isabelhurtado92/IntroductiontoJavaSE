@@ -23,11 +23,13 @@ public class Login {
 	
 	while (count < 5) {
 		
+		count ++;
 		String userInput = reader.nextLine();
 		String passwordInput =	reader.nextLine();	
 		
 		if (userInput.equals(user) && passwordInput.equals(password)) {
 		System.out.println("Your login was successfull!");	
+		return true;
 		
 		} else {
 		System.out.println("Please try again");
@@ -35,16 +37,13 @@ public class Login {
 		
 	}
 		
-	count ++;
 	
-while (count > 5) {
+		if (count == 5) {
 		System.out.println("Ooops, sorry, we've temporarily blocked your account for security reasons.");
-		break;
-		}
 		
+		}
 
 	return isValidated;	
-		
 	}
 	
 }
