@@ -1,11 +1,13 @@
-import java.util.Random;
-import java.util.Scanner;
+package words5;
 
-public class Tools {
+import java.util.Random;
+
+public class Utils {
 	
 	public static int createIntRandom(int top) {
+		// scope #9
 		
-		Random rand = new Random();
+		Random rand = new Random ();
 
 		// Generate random integers in range 0 to top, if top=10 random 0 to 9
 		int intRandom = rand.nextInt(top);
@@ -14,11 +16,11 @@ public class Tools {
 	}
 
 	public static char createCharRandom() {
-		
+		// scope #9
 		// Random rand = new Random();
 		// String alphabetChars =
 		// "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
-		
+		// String alphabetChars2 = "!·$%&/()=?¿?=)()/*-+^*Ç¨_:;;:_+/";
 		String alphabetChars3 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!·$%&/()=?¿?=)()/*-+^*Ç¨_:;;:_+/+/";
 
 		// Generate random char in range 0 to top, if top=10 random 0 to 9
@@ -28,21 +30,23 @@ public class Tools {
 		return charRandom;
 
 	}
-	
-	
-	public static void print (String wordtoPrint) {
-		
-		System.out.println(wordtoPrint);
-		
+
+	public static String fromStringToUser(String account) {
+
+		int dash = account.indexOf("-");
+		String user = account.substring(0, dash);
+
+		return user;
 	}
-	
-	public static void print (char chartoPrint) {
-		
-		System.out.println(chartoPrint);
+
+	public static String fromStringToPassword(String account) {
+
+		int firstDash = account.indexOf("-");
+		int secondDash = account.indexOf("-", firstDash + 1);
+
+		String password = account.substring(secondDash + 1, account.length());
+
+		return password;
 	}
-	
-	public static void print (int intoPrint) {
-		System.out.println(intoPrint);
-	}
-	
+
 }

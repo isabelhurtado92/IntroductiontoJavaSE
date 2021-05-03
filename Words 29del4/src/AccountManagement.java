@@ -6,7 +6,8 @@ public class AccountManagement {
 		
 		
 		AccountCreation.createUser (nameandsurname);
-		AccountCreation.createPassword();
+		AccountCreation.createPassword(nameandsurname);
+		AccountCreation.createEMail(nameandsurname);
 		
 		
 
