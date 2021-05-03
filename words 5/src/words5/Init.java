@@ -28,7 +28,7 @@ public class Init {
 		if (isValidated) {
 			
 			//to-do
-			//AccountUpdating
+			
 			//AccountDeleting
 			
 			isValidated = false;
@@ -39,4 +39,8 @@ public class Init {
 
 	}
 	
+		//AccountUpdating
+		String inputNewPass = AccountUpdating.updateAccount(Scanner reader, String user, String password);
+	
 }
+
