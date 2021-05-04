@@ -29,6 +29,10 @@ public class TestPerson {
 			sergi.setHeight(180);
 			sergi.setBasicSalary(20000);
 			
+			
+			
+			System.out.println("Year net salary is: " + anna.yearNetSalary());
+			
 		}
 		
 

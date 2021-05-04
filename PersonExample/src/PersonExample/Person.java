@@ -38,6 +38,35 @@ public class Person {
 	
 	}
 	
+	public double yearNetSalary() {
+		
+		double yearNetSalary = 0.0;
+		
+		
+		if (basicSalary > 0) {
+			
+			if (age <= 30) {
+				
+				double taxToDeduct6 = (basicSalary * 0.06) ;
+				yearNetSalary = ((basicSalary - taxToDeduct6) * 14);
+				
+				
+			}
+			else {
+				
+				double taxToDeduct12 = (basicSalary * 0.12) ;
+				yearNetSalary = ((basicSalary - taxToDeduct12) * 14);
+				
+			}
+			
+		} else System.out.println("No es pot.");
+			
+		
+		return yearNetSalary;
+		
+	}
+	
+
 	
 	//Getters and Setters and toString (metodos ya predefinidos en el sistema)
 	public String getName() {
