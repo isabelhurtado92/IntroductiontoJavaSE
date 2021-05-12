@@ -119,37 +119,37 @@ public double yearNetSalary() {
 	}
 	
 	
-	public double LifeSpanlost (int age) {
+	public static void Advice (boolean smoking) {
 		
-		Scanner scanner = new Scanner(System.in);
-		//if (smoking == true) {
-		//System.out.println("¿Do you usually smoke?");
-		//scanner nextline
-			//if (yes) {
-			//System.out.println ("¿How many cigarrettes per day?")	
-			//1 cigarette = -5h :  int lifelost = int cigarettesperday * 5
+		Scanner reader = new Scanner(System.in);
 		
-			//sout ("Each day, due to the amount os cigarettes, those hours of life: " + )
-			//return algo
+		if (smoking == true) {
+		System.out.println("¿How many cigarrettes per day do you smoke?");
+		int answer = Integer.valueOf(reader.nextLine());
 		
+			if (answer > 25) {
+				System.out.println("OMG!!!!!!. You're losing" + (answer * 5) + "hours of your life");				
+			}
 		
+			if (answer > 10) {
+				System.out.println("¿Do you ever think of quitting? You're losing" + (answer * 5) + "hours of your life");
+			}
+			
+			if (answer > 5) {
+				System.out.println("Not bad, but still, you're losing" + (answer * 5) + "hours of your life");
+			}
+			
+			if (answer < 5) {
+				System.out.println("You could quit any minute. That way you wouldn't lose" + (answer * 5) + "hours of your life");
+			}
 		
-		
-		
-		
-		//int tobaccopacketsinput = Integer.valueOf(scanner.nextLine());
-		
-		//int lostlifespan = tobaccopacketsinput * (- 5);
-		
-		//double lifespanleft = age - lostlifespan;
+			else {
 				
-		//return lifespanleft;
+				System.out.println("Nice");	}
+		}
+	}	
 		
 		
-	}
-	
-	
-	
 	//Getters and Setters and toString	
  	public String getName() {
 		return name;
