@@ -145,7 +145,7 @@ public class Person {
 				System.out.println("Nice");
 			}
 
-		return this.getName() + "fuma molt";
+		return this.getName() + " got an advice.";
 	}
 
 	
