@@ -20,13 +20,12 @@ public class TestPerson {
 				
 			sergi.tobaccoBuy(0);
 		
-			sergi.smoking();
+			sergi.isAbleToSmoke();
+			
+			System.out.println(sergi.advice(sergi.isAbleToSmoke()));
+			
 	
-			
-			
-			
-			
-			Person anna = new Person ("Anna", 25);
+		
 			
 			
 			
